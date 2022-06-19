@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="child grid-item"></div>
+    </div>
+
+
+    <script>
+        const child = document.addEventListener('click', e => {
+            console.log(e.target)
+        })
+        document.addEventListener('click', e => {
+            console.log(e.target)
+        })
+
+        function func(a, b, c) {
+            return a + b + c
+        }
+
+        let sum = (a, b, c) => { return a + b + c }
+
+        var words = ['aaa', 'bbb', 'ccc']
+        var result = words.reduce((total, word) => {
+            return total + word
+
+        }, '')
+
+        console.log(`result ${result}`)
+    </script>
+</body>
+
+</html>
